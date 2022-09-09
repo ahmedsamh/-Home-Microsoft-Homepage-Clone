@@ -35,8 +35,7 @@ header{
 padding: 5px;
 }
 header .container{  
-padding-left: var(--mainpadding);
-padding-right: var(--mainpadding);
+
 margin-left: auto;
 margin-right: auto;
 }
@@ -44,6 +43,7 @@ header .container .logo{
 display: flex;
 justify-content: space-between;
 align-items: center;
+height: 50px;
 }
 header .container .logo img{
 width: 130px;
@@ -56,7 +56,9 @@ margin-left: 10px;
 
 header .container ul li{
 margin-right:30px ;
-padding-bottom: 3px;
+height: 50px;
+display: flex;
+align-items: center;
 }
 header .container ul li:hover{
 border-bottom: 2px solid black  ;
@@ -64,7 +66,8 @@ border-bottom: 2px solid black  ;
 
 header .container .logo i{
 margin-right: 20px;
-padding-bottom: 5px;
+height: 30px;
+padding: 10px 0 0 ;
 }
 header .container .logo i:hover{
 border-bottom: 2px solid black  ;
@@ -132,7 +135,7 @@ padding-top: 150px;
 }
 section{
     padding: 10px;
-    margin-left: -30px;
+    margin-left: px;
 }
 section .container{
     padding-left: var(--mainpadding);
@@ -140,7 +143,7 @@ section .container{
     margin-left: auto;
 margin-right: auto; 
 display: grid;
-grid-template-columns: repeat(4,1fr);
+grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
 gap: 20px;
 }
 section .container p{
